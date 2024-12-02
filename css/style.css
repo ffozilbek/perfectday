@@ -1,0 +1,49 @@
+/* CUSTOM PROPS */
+
+/* GLOBAL */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: "Roboto","Arial",sans-serif;
+    flex-direction: column;
+    background-color: #fff;
+    color: #222;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
