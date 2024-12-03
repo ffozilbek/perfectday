@@ -97,12 +97,64 @@ main {
     flex-grow: 1;
 }
 
+section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
 /* CONTAINER */
-.container {
+/* .container {
     max-width: 1200px;
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
+} */
+
+/* HEADER */
+.navbar {
+    background-color: var(--dark-color);
+    background-image: url("../img/Rectangle.png");
+    background-size: contain;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../img/icons/menu-icon.svg");
+}
+
+.nav-link {
+    color: var(--light-yellow-color);
+    font-weight: 600;
+}
+.navbar-nav .nav-link.active {
+    color: var(--yellow-color);
+}
+
+.nav-link:hover {
+    color: var(--yellow-color);
+}
+
+.nav-link:focus {
+    color: var(--yellow-color);
+}
+
+
+/* HERO */
+.hero {
+    width: 100%;
+    background-image: url("../img/Rectangle.png");
+    background-size: contain;
+    background-color: var(--dark-color);
+    padding: 100px;
 }

@@ -4,20 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>PerfectDay</title>
 </head>
 
 <body>
-    <div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
-    </div>
-    <script src="./js/script.js"></script>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container-sm">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo-text.svg" alt="perfectday logo" width="147" height="21">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#group">Our group</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#goals">Goals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offers">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+        </section>
+
+        <!-- OUR GROUP -->
+        <section class="group" id="group"></section>
+
+        <!-- OUR GOALS -->
+        <section class="goals" id="goals"></section>
+
+        <!-- WHAT WE OFFERS ? -->
+        <section class="offers" id="offers"></section>
+
+        <!-- CONTACT US -->
+        <section class="contact" id="contact"></section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="footer"></footer>
+
+    </main>
+
+
+
+
+
+
+
+
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
