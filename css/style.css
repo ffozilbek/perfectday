@@ -150,6 +150,7 @@ section {
 
 .navbar-toggler {
     border: none;
+    transition: transform 0.2s ease;
 }
 
 .navbar-toggler:focus {
@@ -157,7 +158,11 @@ section {
 }
 
 .navbar-toggler-icon {
-    background-image: url("../img/icons/menu-icon.svg");
+    background-image: url("../img/icons/list-icon.svg");
+}
+
+.navbar-toggler.active .navbar-toggler-icon{
+    background-image: url("../img/icons/close-icon.svg");
 }
 
 .nav-link {
