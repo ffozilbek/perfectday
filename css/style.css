@@ -1,4 +1,62 @@
 /* CUSTOM PROPS */
+:root {
+    --dark-color: #353044;
+    --light-color: #EEF1F3;
+    --light-yellow-color: #F5F0CD;
+    --light-skyblue-color: #B1F0F7;
+    --skyblue-color: #00C6DB;
+    --yellow-color: #FFDE7D;
+    --dark-skyblue-color: #81BFDA;
+    --blue-color: #7474BF;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Gluten';
+    src: url('../fonts/Gluten-Bold.woff2') format('woff2'),
+        url('../fonts/Gluten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gluten';
+    src: url('../fonts/Gluten-SemiBold.woff2') format('woff2'),
+        url('../fonts/Gluten-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 /* GLOBAL */
 html {
@@ -23,7 +81,8 @@ body {
     font-size: 16px;
     line-height: normal;
     letter-spacing: normal;
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: 'Poppins', sans-serif, arial;
+    font-weight: 400;
     flex-direction: column;
     background-color: #fff;
     color: #222;
