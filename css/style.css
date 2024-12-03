@@ -103,7 +103,7 @@ main {
 }
 
 section {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 30px;
 }
@@ -118,12 +118,34 @@ section {
     margin-right: auto;
 } */
 
+.section__title {
+    font-size: 2.25rem;
+    color: var(--dark-color);
+    font-family: 'Gluten';
+    margin-bottom: 35px;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.custom__btn {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 10px;
+    border-radius: 10px;
+    letter-spacing: 1.2%;
+    transition: background-color 0.2s ease;
+}
+
 /* HEADER */
 .navbar {
     background-color: var(--dark-color);
     background-image: url("../img/Rectangle.png");
     background-size: contain;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.navbar-brand:active {
+    opacity: 0.6;
 }
 
 .navbar-toggler {
@@ -154,13 +176,12 @@ section {
     color: var(--yellow-color);
 }
 
-
 /* HERO */
 .hero {
     width: 100%;
+    background-color: var(--dark-color);
     background-image: url("../img/Rectangle.png");
     background-size: contain;
-    background-color: var(--dark-color);
     padding-top: 120px;
 }
 
@@ -186,32 +207,169 @@ section {
     column-gap: 30px;
 }
 
-.hero__btn {
-    text-decoration: none;
-    font-weight: 600;
-    padding: 12px 10px;
-    border-radius: 10px;
-    letter-spacing: 1.2%;
+.yellow--btn {
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    transition: background-color 0.2s ease;
 }
 
-.hero__btn:hover {
+
+.yellow--btn:hover {
     background-color: var(--light-yellow-color);
 }
 
-.hero__btn:active {
+.yellow--btn:active {
     box-shadow: none;
 }
 
-.btn-yellow {
-    background-color: var(--yellow-color);
-    color: var(--dark-color);
-}
 
 .hero__img {
     max-width: 580px;
 }
+
+/* OUR GROUP */
+.group__card {
+    max-width: 248px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    padding: 0;
+    border: 0px
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card-body {
+    background-color: var(--yellow-color);
+    font-weight: 500;
+}
+
+/* OUR GOALS */
+.goals {
+    background-color: var(--dark-skyblue-color);
+    background-image: url("../img/Rectangle.png");
+    object-fit: contain;
+    text-align: center;
+}
+.goal__text {
+    max-width: 994px;
+    width: 100%;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+/* WHAT WE OFFERS ? */
+.offers__card {
+    max-width: 370px;
+    width: 100%;
+    border: 2px solid var(--dark-color);
+    padding: 40px 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.offers__card::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Gluten';
+    width: 215px;
+    margin: auto;
+}
+
+/* CONTACT US */
+.contact {
+    background-color: var(--blue-color);
+    background-image: url("../img/Rectangle.png");
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.contact__container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contact .section__title {
+    color: var(--light-color);
+}
+
+.contact__input {
+    padding: 18px 22px;
+    border-radius: 20px;
+    border: 0;
+    outline: 2px dashed var(--dark-skyblue-color);
+    outline-offset: 3px;
+}
+
+.blue--btn {
+    max-width: 120px;
+    width: 100%;
+    background-color: var(--skyblue-color);
+    padding: 15px;
+    color: var(--light-color);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.blue--btn:hover {
+    background-color: var(--dark-skyblue-color);
+}
+
+.blue--btn:active {
+    box-shadow: none;
+}
+
+.contact__img {
+    max-width: 248px;
+}
+
+/* FOOTER */
+.footer {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: var(--dark-color);
+    background-image: url("../img/Rectangle.png");
+    object-fit: contain;
+}
+
+.footer__icon {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: color 0.2s ease;
+}
+
+.footer__icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__icon:hover {
+    color: var(--skyblue-color)
+}
+
+.footer__text {
+    color: var(--light-color);
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.875rem;
+}
+
 
 @media only screen and (max-width: 992px) {
     .hero {
@@ -233,5 +391,16 @@ section {
 
     .hero__buttons {
         justify-content: center;
+    }
+
+    .offers__card {
+        max-width: 300px;
+        padding: 40px 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact .section__title {
+        margin-bottom: 0;
     }
 }
