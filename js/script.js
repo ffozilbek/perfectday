@@ -59,10 +59,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
                     elValidation.classList.add("alert-success")
                     elValidation.innerHTML = message.success;
                     elValidation.style.display = "block";
+                    elForm.reset();
                 setTimeout(()=> {
                     elValidation.classList.remove("alert-success")
                     elValidation.style.display = "none";
-                },1000)
+                },1500)
 
             }).catch(()=> {
                 elValidation.classList.add("alert-danger")
@@ -71,7 +72,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
                 setTimeout(()=> {
                     elValidation.classList.remove("alert-danger")
                     elValidation.style.display = "none";
-                },1000)
+                },1500)
             })
         } else {
             elValidation.classList.add("alert-danger")
