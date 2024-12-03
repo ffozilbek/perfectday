@@ -73,6 +73,11 @@ html {
     padding: 0;
 }
 
+h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100%;
     display: flex;
@@ -84,8 +89,8 @@ body {
     font-family: 'Poppins', sans-serif, arial;
     font-weight: 400;
     flex-direction: column;
-    background-color: #fff;
-    color: #222;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 img {
@@ -156,5 +161,77 @@ section {
     background-image: url("../img/Rectangle.png");
     background-size: contain;
     background-color: var(--dark-color);
-    padding: 100px;
+    padding-top: 120px;
+}
+
+.hero__heading {
+    font-size: 4rem;
+    font-family: 'Gluten';
+    font-weight: bold;
+    letter-spacing: 1%;
+    line-height: normal;
+    color: var(--skyblue-color);
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    width: 100%;
+    max-width: 420px;
+    color:var(--light-color);
+    font-size: 1.5rem;
+    letter-spacing: 1%;
+}
+
+.hero__buttons {
+    column-gap: 30px;
+}
+
+.hero__btn {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 10px;
+    border-radius: 10px;
+    letter-spacing: 1.2%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: background-color 0.2s ease;
+}
+
+.hero__btn:hover {
+    background-color: var(--light-yellow-color);
+}
+
+.hero__btn:active {
+    box-shadow: none;
+}
+
+.btn-yellow {
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
+}
+
+.hero__img {
+    max-width: 580px;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero {
+        padding-bottom: 120px;
+    }
+
+    .hero__container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero__content {
+        text-align: center;
+    }
+
+    .hero__img {
+        margin-bottom: 20px;
+    }
+
+    .hero__buttons {
+        justify-content: center;
+    }
 }
